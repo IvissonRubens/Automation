@@ -1,3 +1,16 @@
+# Como mandar o pull request
+
+Digite isso em seu terminal: 
+```
+gh pr create --base main head <sua  branch> -- title "Descricao do Pr" --body "Detalhes das mudancas"
+```
+ou crie um alias que possa ser pelo proprio git cli ou pelo bash
+
+```
+alias pr= "gh pr create --base main --head $(git branch --show-current) --tetle 'meu pull reuqest' --body 'descricao das mudancas'"
+```
+
+
 ## Primeiros passos para fazer o package.json
 
 Para iniciar o progresso vc primeiro ira no caminho do seu programa e executará esse comando.
